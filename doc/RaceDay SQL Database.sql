@@ -7,7 +7,7 @@ CREATE TABLE Users (
     FullName        VARCHAR(100) NOT NULL,
     Email           VARCHAR(150) NOT NULL UNIQUE,
     PasswordHash    VARCHAR(255) NOT NULL,
-    Role            VARCHAR(20) NOT NULL,      -- 'Organiser' or 'Participant'
+    Role            VARCHAR(20) NOT NULL, 
     PhoneNumber     VARCHAR(20),
     CreatedAt       DATETIME DEFAULT GETDATE()
 );
