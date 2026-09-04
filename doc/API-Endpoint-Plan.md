@@ -57,8 +57,3 @@ Role values: **None** (public/no auth), **Any** (any logged-in user), **Organise
 | GET | /api/events/{id}/results | Returns the full results list for an event (e.g. for a public leaderboard). | None | None | 200 OK – array of results ordered by category and position. 404 Not Found – event does not exist. |
 
 ---
-
-### Notes
-- All authenticated routes expect an `Authorization: Bearer <token>` header containing the JWT issued at login.
-- Role checks are enforced server-side via `[Authorize(Roles = "...")]` in Part 2; ownership checks (e.g. "only the owning Organiser") are enforced in the service layer by comparing the token's user id to the resource's OrganiserID/ParticipantID.
-- Standard error responses (400/401/403/404/409) follow a consistent JSON error shape: `{ "message": "..." }`.
