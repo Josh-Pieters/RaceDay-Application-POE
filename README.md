@@ -29,6 +29,7 @@ Role-based access is planned at the API level in Part 2 (`[Authorize(Roles = "..
 - `Results` has a 1-to-0..1 relationship with `Enrolments` — a result only exists once an Organiser captures it after race day.
 ## CI/CD
  
+<img width="1334" height="537" alt="image" src="https://github.com/user-attachments/assets/eb312838-6a37-46e3-bdfb-5b47879530f0" />
 
  
 ## Video Walkthrough
